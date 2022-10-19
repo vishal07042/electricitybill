@@ -1,0 +1,49 @@
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    int bill=0;  // bill intilized to zero
+    int extraPay; // extraPay unit calculated  according to the table
+
+    int consumptionUnit;
+    printf("enter the amount of electricity you consumed this month");
+    scanf("%i",&consumptionUnit);
+    if (consumptionUnit<200)
+    {
+        int  rate=consumptionUnit;
+        printf("you have to pay ");
+        /* code */printf("%i",rate);
+        printf(" rupees");
+    }
+    else if (consumptionUnit<400){
+
+        extraPay=consumptionUnit-200;
+        int rate=100+extraPay*0.5;
+        printf("you have to pay ");
+        printf("%i",rate);
+        printf(" rupees");
+
+        /* code */
+    }
+    else if (consumptionUnit<600)
+
+    {  extraPay=consumptionUnit-400;
+        int rate=230+extraPay*0.8;
+        printf("you have to pay ");
+        printf("%i",rate);
+        printf(" rupees");
+        /* code */
+    }
+    else if (consumptionUnit>600)
+    {  extraPay=consumptionUnit-600;
+        int rate=390+extraPay*1;
+        printf("you have to pay ");
+        printf("%i",rate);
+        printf(" rupees");
+        /* code */
+    }
+
+
+
+
+
+}
